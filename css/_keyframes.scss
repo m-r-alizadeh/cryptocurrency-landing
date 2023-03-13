@@ -1,0 +1,38 @@
+@keyframes liveup {
+    0% {
+      background: rgba(0, 255, 0, 0.3);
+    }
+  
+    50% {
+      background: rgba(0, 255, 0, 0.6);
+    }
+  
+    100% {
+      background: rgba(0, 255, 0, 0.3);
+    }
+  }
+  @keyframes livedown {
+    0% {
+      background: rgba(255, 0, 0, 0.3);
+    }
+  
+    50% {
+      background: rgba(255, 0, 0, 0.6);
+    }
+  
+    100% {
+      background: rgba(255, 0, 0, 0.3);
+    }
+  }
+  @keyframes ticker {
+    0% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+  
+    100% {
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
+    }
+  }
+  

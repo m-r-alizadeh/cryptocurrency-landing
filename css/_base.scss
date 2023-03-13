@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+body,
+html {
+  height: 100%;
+}
+html {
+  -webkit-tap-highlight-color: transparent;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #333;
+  background-color: #ecebe9;
+}
+img{
+  max-width: 100%;
+}
+a,a:link,a:visited{
+  color: rgb(0, 89, 255);
+}
+.elementor-spacer{
+  height: 50px;
+}

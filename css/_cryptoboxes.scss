@@ -1,0 +1,108 @@
+.cryptoboxes {
+    color: #fff;
+    font-family: muli, sans-serif;
+    .mcw-ticker {
+      visibility: hidden;
+      overflow: hidden;
+  
+      &.mcw-header,
+      &.mcw-footer {
+        width: 100%;
+        position: fixed;
+        left: 0;
+        z-index: 9999999;
+      }
+      &.mcw-header {
+        top: 0;
+      }
+    }
+    .mcw-midnight-theme {
+      background: #293145;
+    }
+  
+    .cc-stats {
+      margin: 0 !important;
+      border: 0 none !important;
+      white-space: nowrap;
+      list-style: none !important;
+      line-height: 1em;
+      position: relative;
+      width: 100%;
+      -webkit-animation: ticker 0s linear infinite 0s normal;
+      -moz-animation: ticker 0s linear infinite 0s normal;
+      animation: ticker 0s linear infinite 0s normal;
+      .cc-dup {
+        display: inline;
+      }
+      .cc-coin {
+        display: inline-flex;
+        align-items: center;
+        margin: 0 !important;
+        padding: 10px !important;
+        border: 0 none !important;
+        > div {
+          position: relative;
+        }
+        img {
+          vertical-align: top;
+          margin-right: 10px;
+          height: 25px;
+        }
+      }
+    }
+    .fiat-symbol {
+      display: inline !important;
+      font-weight: 400 !important;
+    }
+    [data-price] {
+      display: inline-block;
+      padding: 0.3em;
+      line-height: 1;
+      border-radius: 4px;
+      white-space: nowrap;
+      -webkit-box-sizing: content-box;
+      box-sizing: content-box;
+    }
+    .mcw-down {
+      display: inline-flex;
+      align-items: center;
+      vertical-align: bottom;
+    }
+    .cc-coin {
+      .mcw-down,
+      .mcw-up {
+        display: inline-flex;
+        align-items: center;
+        vertical-align: bottom;
+      }
+      .mcw-up {
+        color: #85b000;
+      }
+      .mcw-down {
+        color: #f03;
+      }
+    }
+    .mcw-animated {
+      -webkit-animation-duration: 1s;
+      animation-duration: 1s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+    }
+    .mcw-animated.infinite {
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite;
+    }
+    .liveup {
+      animation-name: liveup;
+      -webkit-animation-name: liveup;
+      animation-duration: 500;
+      -webkit-animation-duration: 500;
+    }
+  
+    .livedown {
+      animation-name: livedown;
+      -webkit-animation-name: livedown;
+      animation-duration: 500;
+      -webkit-animation-duration: 500;
+    }
+  }
